@@ -1,5 +1,7 @@
 package model;
 
+import lombok.Getter;
+import lombok.Setter;
 import model.logging.Event;
 import model.logging.EventLog;
 import org.json.JSONArray;
@@ -13,6 +15,8 @@ import java.util.function.ToIntFunction;
 // Represents a GotchiBall team (owned by the user) with a name,
 // a list of all players on the team, and counters of how many
 // games the team has won and lost
+@Getter
+@Setter
 public class PlayerTeam implements Team, Writable {
     private final String name;            // team name
     private final List<Player> players;   // list of players on team
@@ -131,29 +135,5 @@ public class PlayerTeam implements Team, Writable {
             jsonArray.put(player.toJson());
         }
         return jsonArray;
-    }
-
-    public void setWins(int wins) {
-        this.wins = wins;
-    }
-
-    public void setLosses(int losses) {
-        this.losses = losses;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public List<Player> getPlayers() {
-        return players;
-    }
-
-    public int getWins() {
-        return wins;
-    }
-
-    public int getLosses() {
-        return losses;
     }
 }

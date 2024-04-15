@@ -50,7 +50,7 @@ public class ResultsMenu extends TextMenu {
         Clip clip;
         try {
             AudioInputStream audioInput;
-            if (game.getDidHomeTeamWin()) {
+            if (game.isDidHomeTeamWin()) {
                 audioInput = AudioSystem.getAudioInputStream(new File("data/audio/win.wav"));
             } else {
                 audioInput = AudioSystem.getAudioInputStream(new File("data/audio/loss.wav"));
@@ -69,7 +69,7 @@ public class ResultsMenu extends TextMenu {
     //           them to win the next game
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (game.getDidHomeTeamWin()) {
+        if (game.isDidHomeTeamWin()) {
             String playerMessage = "Congrats on the win! You have a new recruit\n"
                     + "to your team. What would you like to name them?";
             String playerName = JOptionPane.showInputDialog(playerMessage, null);

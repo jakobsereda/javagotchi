@@ -1,5 +1,7 @@
 package model;
 
+import lombok.Getter;
+import lombok.Setter;
 import model.logging.Event;
 import model.logging.EventLog;
 import org.json.JSONObject;
@@ -12,6 +14,8 @@ import java.util.function.IntConsumer;
 // GotchiBall team, with a name and stats (speed, defense, offense,
 // morale) represented as integers. Players also have an energy
 // level, which is an integer in [1, 10].
+@Getter
+@Setter
 public class Player implements Writable {
     private final String name;   // player name
     private int speed;           // speed stat
@@ -142,57 +146,5 @@ public class Player implements Writable {
         json.put("energy", energy);
         json.put("imagePath", imagePath);
         return json;
-    }
-
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
-
-    public void setDefense(int defense) {
-        this.defense = defense;
-    }
-
-    public void setOffense(int offense) {
-        this.offense = offense;
-    }
-
-    public void setMorale(int morale) {
-        this.morale = morale;
-    }
-
-    public void setEnergy(int energy) {
-        this.energy = energy;
-    }
-
-    public void setImagePath(String imagePath) {
-        this.imagePath = imagePath;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getSpeed() {
-        return speed;
-    }
-
-    public int getDefense() {
-        return defense;
-    }
-
-    public int getOffense() {
-        return offense;
-    }
-
-    public int getMorale() {
-        return morale;
-    }
-
-    public int getEnergy() {
-        return energy;
-    }
-
-    public String getImagePath() {
-        return imagePath;
     }
 }

@@ -82,7 +82,7 @@ public class GameMenu {
     //           of wins they have so far. if the users team lost,
     //           motivates them to try and win the next one
     private void postGame() {
-        if (game.getDidHomeTeamWin()) {
+        if (game.isDidHomeTeamWin()) {
             System.out.println("\nCongrats on the win!");
             System.out.println("You have a new recruit to your team,");
             System.out.println("what would you like to name them?");

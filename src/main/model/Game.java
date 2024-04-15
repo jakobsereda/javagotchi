@@ -1,11 +1,13 @@
 package model;
 
+import lombok.Getter;
 import model.logging.Event;
 import model.logging.EventLog;
 
 // Represents a GotchiBall game between a home and
 // away team, (who are rivals), scores for both teams,
 // and an indicator if the home team won or not
+@Getter
 public class Game {
     private final Team home;          // home team (always users team)
     private final Team away;          // away team (always an enemy team of user's team)
@@ -85,25 +87,5 @@ public class Game {
     //           (made for testing)
     public void setAwayScoreForTesting(int awayScore) {
         this.awayScore = awayScore;
-    }
-
-    public Team getHome() {
-        return home;
-    }
-
-    public Team getAway() {
-        return away;
-    }
-
-    public int getHomeScore() {
-        return homeScore;
-    }
-
-    public int getAwayScore() {
-        return awayScore;
-    }
-
-    public boolean getDidHomeTeamWin() {
-        return didHomeTeamWin;
     }
 }

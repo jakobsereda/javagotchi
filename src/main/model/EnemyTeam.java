@@ -1,5 +1,6 @@
 package model;
 
+import lombok.Getter;
 import model.logging.Event;
 import model.logging.EventLog;
 
@@ -7,6 +8,7 @@ import java.util.function.ToIntFunction;
 
 // Represents an enemy GotchiBall team to the users team,
 // with a name and the PlayerTeam they are the rival of
+@Getter
 public class EnemyTeam implements Team {
     private final String name;        // team name
     private final PlayerTeam rival;   // rival team (of this rival team)
@@ -96,15 +98,6 @@ public class EnemyTeam implements Team {
     @Override
     public int getWins() {
         return 0;
-    }
-
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    public PlayerTeam getRival() {
-        return rival;
     }
 }
 
