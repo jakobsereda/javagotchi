@@ -1,0 +1,25 @@
+{
+    "players": [
+        {
+            "name": "Paul",
+            "speed": 12,
+            "defense": 10,
+            "offense": 14,
+            "morale": 10,
+            "energy": 4,
+            "imagePath": "yesterday.png"
+        },
+        {
+            "name": "John",
+            "speed": 18,
+            "defense": 11,
+            "offense": 10,
+            "morale": 12,
+            "energy": 2,
+            "imagePath": "julia.png"
+        }
+    ],
+    "name": "My team 2",
+    "wins": 1,
+    "losses": 1
+}

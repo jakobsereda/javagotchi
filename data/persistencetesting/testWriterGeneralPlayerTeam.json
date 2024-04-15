@@ -1,0 +1,25 @@
+{
+    "wins": 1,
+    "players": [
+        {
+            "offense": 10,
+            "defense": 10,
+            "imagePath": "yesterday.png",
+            "name": "Paul",
+            "morale": 10,
+            "speed": 10,
+            "energy": 10
+        },
+        {
+            "offense": 20,
+            "defense": 20,
+            "imagePath": "julia.png",
+            "name": "John",
+            "morale": 20,
+            "speed": 20,
+            "energy": 10
+        }
+    ],
+    "name": "The Beatles",
+    "losses": 1
+}
