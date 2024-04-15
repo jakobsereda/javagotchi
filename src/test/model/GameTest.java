@@ -83,7 +83,7 @@ public class GameTest {
         testGame.setHomeScoreForTesting(2);
         testGame.playGame();
 
-        assertTrue(testGame.getDidHomeTeamWin());
+        assertTrue(testGame.isDidHomeTeamWin());
         assertEquals(2, testGame.getAwayScore());
         assertEquals(3, testGame.getHomeScore());
 
@@ -102,7 +102,7 @@ public class GameTest {
         testGame.setHomeScoreForTesting(3);
         testGame.playGame();
 
-        assertTrue(testGame.getDidHomeTeamWin());
+        assertTrue(testGame.isDidHomeTeamWin());
         assertEquals(2, testGame.getAwayScore());
         assertEquals(3, testGame.getHomeScore());
 
@@ -121,7 +121,7 @@ public class GameTest {
         testGame.setHomeScoreForTesting(2);
         testGame.playGame();
 
-        assertFalse(testGame.getDidHomeTeamWin());
+        assertFalse(testGame.isDidHomeTeamWin());
         assertEquals(3, testGame.getAwayScore());
         assertEquals(2, testGame.getHomeScore());
 
