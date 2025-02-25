@@ -1,5 +1,9 @@
 # JavaGotchi
 
+## Demo!
+
+Check out my demo of *JavaGotchi* [here](https://youtu.be/zi0zbNK49-Q?si=C36J2vd3q2pC1Qj8)!
+
 ## Object-Oriented Athletes!
 
 *JavaGotchi* is a simple application based off of the Japanese handheld game *Tamagotchi*, with a
